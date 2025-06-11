@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
-import { MenuDiv, MenuLink, MenuCategoria } from './StyledComponents';
+import { MenuDiv, MenuLink } from './StyledComponents';
 
-const MenuItem = ({ children, url }) => {
+const MenuItem = ({ children, url}) => {
 	const location = useLocation();
 	const isActive = url ? location.pathname === url : false;
 
