@@ -11,6 +11,12 @@ export const SwitchWrapper = styled.label`
 	position: relative;
 	transition: background 0.3s;
 	box-shadow: 0 2px 8px #0001;
+
+	@media (max-width: 900px) {
+		width: 50px;
+		height: 24px;
+	}
+	
 `;
 
 export const SwitchInput = styled.input`
@@ -30,11 +36,20 @@ export const SwitchSlider = styled.span`
 	align-items: center;
 	justify-content: center;
 	font-size: 18px;
-	color: white;
-	color: ${({ $dark }) => ($dark ? '#white' : '#23243a')};
+	color: ${({ $dark }) => ($dark ? '#fff' : '#23243a')};
 	box-shadow: 0 1px 4px #0002;
-	img {
+
+	@media (max-width: 900px) {
 		width: 18px;
 		height: 18px;
+		top: 3px;
+		left: ${({ $dark }) => ($dark ? '26px' : '3px')};
+		font-size: 14px;
+	}
+	
+
+	img {
+		width: 100%;
+		height: 100%;
 	}
 `;

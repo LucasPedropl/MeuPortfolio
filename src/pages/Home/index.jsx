@@ -1,10 +1,11 @@
+import Capa from "../../components/Capa";
 import { Container } from "./StyledComponents"
 
 
 const Home = () => {
     return(
         <Container>
-            <div></div>
+            <Capa/>
         </Container>
     )
 }
