@@ -1,5 +1,4 @@
 import { AreaDescricao, AreaPerfil, Container, Ocupation, Descricao, Perfil } from './StyledComponents';
-import perfil from '../../../public/ladnvs.png';
 
 const Capa = () => {
 	return (
@@ -9,7 +8,7 @@ const Capa = () => {
 				<Descricao>Front-end developer with React + Typescript</Descricao>
 			</AreaDescricao>
 			<AreaPerfil>
-				<Perfil src={perfil} />
+				<Perfil src='/ladnvs.png' />
 			</AreaPerfil>
 			<AreaDescricao>
 				<Ocupation>Back-End Developer</Ocupation>

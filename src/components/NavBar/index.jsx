@@ -1,8 +1,5 @@
 import { AreaLogo, Container, Logo, AreaMenu, AreaSocial, AreaConfig, AreaDireita, HamburgerButton } from './StyledComponents';
-import logo from '../../../public/icone-site.png';
 import MenuItem from './MenuItem';
-import FlagEua from '../../../public/FlagEua.png';
-import FlagBr from '../../../public/FlagBR.png';
 import SwitchTheme from './Switch';
 import MobileMenu from './MobileMenuWrapper';
 import { useState } from 'react';
@@ -23,7 +20,7 @@ const NavBar = () => {
 	return (
 		<Container>
 			<AreaLogo>
-				<Logo src={logo} />
+				<Logo src="/icone-site.png" />
 			</AreaLogo>
 			<HamburgerButton onClick={handleMenuToggle}>
 				<i className="bi bi-list" />
@@ -47,7 +44,7 @@ const NavBar = () => {
 					</a>
 				</AreaSocial>
 				<AreaConfig>
-					<img src={isBr ? FlagBr : FlagEua} onClick={handleFlagClick} />
+					<img src={isBr ? '/FlagBR.png' : '/FlagEua.png'} onClick={handleFlagClick} />
 					<SwitchTheme dark={dark} onToggle={handleToggle} />
 				</AreaConfig>
 			</AreaDireita>

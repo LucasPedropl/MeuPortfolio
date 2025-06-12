@@ -30,7 +30,7 @@ export const Descricao = styled.p`
 
 export const Ocupation = styled.h1`
 	color: rgb(77, 0, 0);
-	
+	white-space: nowrap;
 `;
 
 export const AreaPerfil = styled.div`
