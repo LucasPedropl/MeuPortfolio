@@ -2,8 +2,6 @@ import React from 'react';
 import { MobileMenuWrapper, MobileConfigWrapper, MobileConfigLabel } from './StyledComponents';
 import MenuItem from '../MenuItem';
 import SwitchTheme from '../Switch';
-import FlagEua from '../../../../public/FlagEua.png';
-import FlagBr from '../../../../public/FlagBR.png';
 import { AreaMenu, AreaSocial } from '../StyledComponents';
 
 const MobileMenu = ({ menuOpen, dark, isBr, handleToggle, handleFlagClick, linkedin, instagram, github, handleMenuToggle }) => (
@@ -29,7 +27,7 @@ const MobileMenu = ({ menuOpen, dark, isBr, handleToggle, handleFlagClick, linke
 			</div>
 			<div onClick={handleFlagClick}>
 				<MobileConfigLabel>Language</MobileConfigLabel>
-				<img src={isBr ? FlagBr : FlagEua} />
+				<img src={isBr ? '/FlagBR.png' : '/FlagEua.png'} />
 			</div>
 		</MobileConfigWrapper>
 		<AreaSocial>
